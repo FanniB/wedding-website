@@ -73,6 +73,8 @@
 
 <body>
 
+  <!-- Language Toggle -->
+
 	<div class="fh5co-loader"></div>
 
 	<div id="page">
@@ -83,12 +85,28 @@
 						<div id="fh5co-logo"><a href="index.html">Wedding<strong>.</strong></a></div>
 					</div>
 
+					<!-- by Máté Szlovák-->
 					<div class="col-xs-10 text-right menu-1">
+						<script>
+							function helyszinClicked() {
+								var elem = document.getElementById("helyszin_id");
+								elem.scrollIntoView();
+							}
+
+							function rsvpClicked() {
+								var elem = document.getElementById("rsvp_id");
+								elem.scrollIntoView();
+							}
+						</script>
+						
 						<ul>
 							<li class="active"><a href="index.html">Home</a></li>
-							<li><a href="#rsvp_id">RSVP</a></li>
+							<li><a href="javascript:rsvpClicked()">RSVP</a></li>
 
-							<li><a href="#helyszin_id">Helyszín</a></li>
+							<li><a href="javascript:helyszinClicked()">Helyszín</a></li>
+							<li><button id="hu" onclick="setLanguage('HU')">HU</button></li>
+
+							<li><button id="en" onclick="setLanguage('EN')">EN</button></li>
 						</ul>
 					</div>
 				</div>
@@ -132,6 +150,7 @@
 							azt is, ha szükségetek van szállásra az éjszakára. Ezen kívül letölthetitek a "save the
 							date"
 							naptárfájlt is, hogy elmentsétek a dátumot a saját naptárotokba. </p>
+							<p id="paragraph">This is a simple website with a language toggle feature.</p>
 					</div>
 					<div class="buttons">
 						<a class="fancy" href="https://forms.office.com/r/FvrmdqXd84" target="_blank">
@@ -253,7 +272,7 @@
 							<img src="images/bodrogi.png" style="width:100%">
 						</div>
 
-					
+
 
 						<!-- Navigation buttons -->
 						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -771,6 +790,9 @@
 
 	<!-- Link to the external JavaScript file -->
 	<script src="js/slideshow.js"></script>
+
+
+	<script src="translate.js"></script>
 
 	<script>
 		var d = new Date(2025, 4, 20, 19, 0, 0, 0);
