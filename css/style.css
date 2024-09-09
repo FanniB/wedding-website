@@ -1085,7 +1085,8 @@ form label {
 .simply-countdown>.simply-section {
   /* coutndown blocks */
   display: inline-block;
-  width: 100px;
+  flex: 0 1 calc(25%);
+  max-width: 100px;
   height: 100px;
   background: #e3c698;
   margin: 0 4px;
@@ -1095,6 +1096,12 @@ form label {
   border-radius: 50%;
   position: relative;
   animation: pulse 1s ease infinite;
+}
+
+.simply-countdown-one {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @keyframes pulse {
