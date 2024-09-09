@@ -16,12 +16,12 @@
 	<meta name="author" content="FREEHTML5.CO" />
 	<link href='https://fonts.googleapis.com/css?family=Arizonia' rel='stylesheet'>
 	<link href='https://fonts.googleapis.com/css?family=Amiko' rel='stylesheet'>
-	<!-- 
+	<!--
 	//////////////////////////////////////////////////////
 
-	FREE HTML5 TEMPLATE 
+	FREE HTML5 TEMPLATE
 	DESIGNED & DEVELOPED by FREEHTML5.CO
-		
+
 	Website: 		http://freehtml5.co/
 	Email: 			info@freehtml5.co
 	Twitter: 		http://twitter.com/fh5co
@@ -69,6 +69,8 @@
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 
+	<script src="js/translation.js"></script>
+
 </head>
 
 <body>
@@ -89,24 +91,24 @@
 					<div class="col-xs-10 text-right menu-1">
 						<script>
 							function helyszinClicked() {
-								var elem = document.getElementById("helyszin_id");
+								let elem = document.getElementById("helyszin_id");
 								elem.scrollIntoView();
 							}
 
 							function rsvpClicked() {
-								var elem = document.getElementById("rsvp_id");
+								let elem = document.getElementById("rsvp_id");
 								elem.scrollIntoView();
 							}
 						</script>
-						
+
 						<ul>
 							<li class="active"><a href="index.html">Home</a></li>
 							<li><a href="javascript:rsvpClicked()">RSVP</a></li>
 
 							<li><a href="javascript:helyszinClicked()">Helyszín</a></li>
-							<li><button id="hu" onclick="setLanguage('HU')">HU</button></li>
+							<li><button id="hu" onclick="setLanguage('hu')">HU</button></li>
 
-							<li><button id="en" onclick="setLanguage('EN')">EN</button></li>
+							<li><button id="en" onclick="setLanguage('en')">EN</button></li>
 						</ul>
 					</div>
 				</div>
@@ -123,7 +125,7 @@
 						<div class="display-t">
 							<div class="display-tc animate-box" data-animate-effect="fadeIn">
 								<h1>Fanni &amp; Zoli</h1>
-								<h2 class="date">2025 Április 20, 16:00</h2>
+								<h2 id="wedding-date-text" class="date">2025 Április 20, 16:00</h2>
 								<div class="simply-countdown simply-countdown-one"></div>
 
 							</div>
@@ -140,7 +142,7 @@
 			</div>
 			<div class="rsvp_div">
 				<div class="rsvp_body">
-					<div class="rsvp_text">Kedves Barátaink, Családtagjaink!<br><br>
+					<div id="rsvp-text" class="rsvp_text">Kedves Barátaink, Családtagjaink!<br><br>
 						<p>Örömmel hívunk meg benneteket az esküvőnkre, amely 2025. április 20-án lesz Ráckevén. Minden
 							fontos információt, frissítést és programot itt, ezen a weboldalon fogunk közzétenni. Az
 							alábbiakban megtaláljátok az RSVP űrlap linkjét, kérjük, töltsétek ki, hogy pontos
@@ -155,7 +157,7 @@
 					<div class="buttons">
 						<a class="fancy" href="https://forms.office.com/r/FvrmdqXd84" target="_blank">
 							<span class=" top-key"></span>
-							<span class="text">RSVP - visszajelzés</span>
+							<span id="respond-text" class="text">RSVP - visszajelzés</span>
 							<span class="bottom-key-1"></span>
 							<span class="bottom-key-2"></span>
 						</a>
@@ -163,7 +165,7 @@
 
 						<a class="fancy" href="files/Fanni_Zoli_eskuvo.ics" download="Fanni&Zoli esküvő">
 							<span class=" top-key"></span>
-							<span class="text">Save the date</span>
+							<span id="save-the-date-text" class="text ">Save the date</span>
 							<span class="bottom-key-1"></span>
 							<span class="bottom-key-2"></span>
 						</a>
@@ -288,7 +290,7 @@
 
 		<section class="s_location">
 			<div class="location" id="helyszin_id">
-				<h1>Helyszín</h1>
+				<h1 id="location-text">Helyszín</h1>
 			</div>
 			<div class="rsvp_div">
 
@@ -300,7 +302,7 @@
 							referrerpolicy="no-referrer-when-downgrade"></iframe>
 					</div>
 				</div>
-				<div class="hotel_info">
+				<div id="hotel-info-text" class="hotel_info">
 					<h2>Session Hotel Ráckeve</h2>
 
 
@@ -334,8 +336,8 @@
 
 				</div>
 			</div>
+		</section>
 	</div>
-	</section>
 	<!----
 	<div id="fh5co-event" class="fh5co-bg" style="background-image:url(images/img_bg_3.jpg);">
 		<div class="overlay"></div>
@@ -455,8 +457,8 @@
 			<div class="row row-bottom-padded-md">
 				<div class="col-md-12">
 					<ul id="fh5co-gallery-list">
-						
-						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-1.jpg); "> 
+
+						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-1.jpg); ">
 						<a href="images/gallery-1.jpg">
 							<div class="case-studies-summary">
 								<span>14 Photos</span>
@@ -517,7 +519,7 @@
 							</a>
 						</li>
 
-						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-8.jpg); "> 
+						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-8.jpg); ">
 							<a href="#" class="color-5">
 								<div class="case-studies-summary">
 									<span>90 Photos</span>
@@ -533,7 +535,7 @@
 								</div>
 							</a>
 						</li>
-					</ul>		
+					</ul>
 				</div>
 			</div>
 		</div>
@@ -648,7 +650,7 @@
 
 	<div id="fh5co-services" class="fh5co-section-gray">
 		<div class="container">
-			
+
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
 					<h2>We Offer Services</h2>
@@ -698,7 +700,7 @@
 				</div>
 			</div>
 
-			
+
 		</div>
 	</div>
 
@@ -742,7 +744,7 @@
 			<div class="row copyright">
 				<div class="col-md-12 text-center">
 					<p>
-						<small class="block">&copy; 2016 Free HTML5. All Rights Reserved.</small> 
+						<small class="block">&copy; 2016 Free HTML5. All Rights Reserved.</small>
 						<small class="block">Designed by <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a> Demo Images: <a href="http://unsplash.co/" target="_blank">Unsplash</a></small>
 					</p>
 					<p>
