@@ -2555,3 +2555,27 @@ html {
   background-color: #a8854e;
 }
 
+.btn-hu, .btn-en{
+
+  border: none;
+  color: white;
+  /* Default font color */
+  background-color: transparent;
+  /* No background color */
+  padding: 10px 20px;
+  /* Padding around the text */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  /* Smooth transition for color changes */
+  font-size: 16px;
+  width: 40px;
+}
+
+.btn-hu:hover,
+.btn-hu:active,
+.btn-en:hover,
+.btn-en:active {
+  background-color: white;
+  color: black;
+}
+
