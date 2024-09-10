@@ -2661,13 +2661,14 @@ html {
   /* Default font color */
   background-color: transparent;
   /* No background color */
-  padding: 10px 20px;
+  padding: 10px 10px;
   /* Padding around the text */
   cursor: pointer;
   transition: all 0.3s ease;
   /* Smooth transition for color changes */
-  font-size: 16px;
-  width: 40px;
+  font-size: 15px;
+  width: 60px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .btn-hu:hover,
