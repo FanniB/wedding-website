@@ -1086,8 +1086,8 @@ form label {
   /* coutndown blocks */
   display: inline-block;
   flex: 0 1 calc(25%);
-  max-width: 100px;
-  height: 100px;
+  max-width: 10em;
+  height: 10em;
   background: #e3c698;
   margin: 0 4px;
   -webkit-border-radius: 50%;
@@ -1096,7 +1096,13 @@ form label {
   border-radius: 50%;
   position: relative;
   animation: pulse 1s ease infinite;
+  aspect-ratio: 1/1;
+  font-size: 2em;
 }
+
+/***********/
+
+/***********/
 
 .simply-countdown-one {
   display: flex;
@@ -2548,3 +2554,4 @@ html {
 .language-toggle button:hover {
   background-color: #a8854e;
 }
+

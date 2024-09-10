@@ -1,6 +1,6 @@
 const translations = {
     hu: [
-         {
+        {
             name: "wedding-date-text",
             value: "2025 Április 20, 16:00"
         },
@@ -15,8 +15,7 @@ const translations = {
                 "\t\t\t\t\t\t\tjelezzétek\n" +
                 "\t\t\t\t\t\t\tazt is, ha szükségetek van szállásra az éjszakára. Ezen kívül letölthetitek a \"save the\n" +
                 "\t\t\t\t\t\t\tdate\"\n" +
-                "\t\t\t\t\t\t\tnaptárfájlt is, hogy elmentsétek a dátumot a saját naptárotokba. </p>\n" +
-                "\t\t\t\t\t\t\t<p id=\"paragraph\">This is a simple website with a language toggle feature.</p>"
+                "\t\t\t\t\t\t\tnaptárfájlt is, hogy elmentsétek a dátumot a saját naptárotokba. </p>\n"
         },
         {
             name: "respond-text",
@@ -31,12 +30,16 @@ const translations = {
             value: "Helyszín"
         },
         {
+            name: "location-header-text",
+            value: "Helyszín"
+        },
+        {
             name: "hotel-info-text",
             value: "<h2>Session Hotel Ráckeve</h2>\n" +
                 "\n" +
                 "\n" +
                 "\n" +
-                "\t\t\t\t\t<span class=\"megkozelites\"> Ráckeve, Termál sétány 1, 2300 Hungary\n" +
+                "\t\t\t\t\t<span class=\"megkozelites\"> Ráckeve, Termál sétány 1, 2300 Magyarország\n" +
                 "\n" +
                 "\t\t\t\t\t\t<br><br>\n" +
                 "\t\t\t\t\t\t<u>Autóval:</u><br>\n" +
@@ -71,7 +74,13 @@ const translations = {
         },
         {
             name: "rsvp-text",
-            value: "RSVP text in english"
+            value: "Dear Friends & Family!<br><br>\n" +
+                "\t\t\t\t\t\t<p>We are happy to invite you to our wedding, which will take place in Ráckeve on April 20,\n" +
+                "\t\t\t\t\t\t\t2025. All important information, updates, and schedules will be displayed here on this\n" +
+                "\t\t\t\t\t\t\twebsite. Below, you will find a link to the RSVP form; please fill it out so we can plan the\n" +
+                "\t\t\t\t\t\t\tfinal headcount and indicate if you will be bringing a +1 or children. Please also let us\n" +
+                "\t\t\t\t\t\t\tknow here if you need accommodation for the night. Additionally, you can download the \"save\n" +
+                "\t\t\t\t\t\t\tthe date\" calendar file so you can save the date in your own calendar.</p>"
         },
         {
             name: "respond-text",
@@ -86,13 +95,35 @@ const translations = {
             value: "Location"
         },
         {
+            name: "location-header-text",
+            value: "Location"
+        },
+        {
             name: "hotel-info-text",
-            value: "Hotel info in english"
+            value: "<h2>Session Hotel Ráckeve</h2>\n" +
+                "<span class=\"megkozelites\"> Ráckeve, Termál sétány 1, 2300 Hungary\n" +
+                "<br><br>\n" +
+                "<u>BY CAR:</u>\n" +
+                "From the north, Ráckeve is reached via Budapest.\n" +
+                "Exit the M0 ring road at Szigetszentmiklós or Halásztelek, and continue along Csepel-szigeti út via Szigetszentmiklós/Halásztelek – Tököl – Szigetcsép – Szigetszentmárton – Ráckeve, or from Route 51 at Kiskunlacháza towards Ráckeve at the Pereg junction.<br><br>\n" +
+                "\n" +
+                "From the west, Ráckeve can be reached across the Danube, from several directions:\n" +
+                "with ferries at Adony, Lórév, Százhalombatta or Ercsi\n" +
+                "then along Route 51 or the road running inland on Csepel Island\n" +
+                "From the south, via Route 6, the bridge at Dunaföldvár, and Route 51 <br><br>\n" +
+                "\n" +
+                "From the east, via Route 4 and 51, or from Route 3. <br><br>\n" +
+                "\n" +
+                "\n" +
+                "<u>PUBLIC TRANSPORT:</u><br>\n" +
+                "You can also reach our town with scheduled bus (Volánbusz) and suburban railway (HÉV) lines.\n" +
+                "If arriving with the Ráckeve HÉV line, walk 200 m from its terminus towards Budapest, then turn right. If arriving with scheduled bus service (from the direction of the Budapest, Csepel, Vermes Miklós utca terminus), alight at the HÉV terminus, walk 200 m towards Budapest, then turn right. If arriving from Budapest Népliget Bus Terminal, alight in the town centre of Ráckeve, or walk towards Budapest (ca. 1500 m), or board a local bus to the HÉV terminus.\n" +
+                "</span>"
         },
     ]
 };
 // Set default language based on the user's browser language or fallback to English
-const defaultLanguage = navigator.language.startsWith('hu') ? 'hu' : 'en';
+const defaultLanguage = "hu";
 setLanguage(defaultLanguage);
 
 // Function to set the language
@@ -102,7 +133,7 @@ function setLanguage(language) {
     const elementsToTranslate = document.querySelectorAll("[id$=text]");
     // Loop through each translatable element and update text
     elementsToTranslate.forEach(el => {
-        const element = translations[language].find(it => it.name===el.id)
+        const element = translations[language].find(it => it.name === el.id)
 
         el.innerHTML = element.value;
     });
