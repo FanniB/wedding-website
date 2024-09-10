@@ -1086,8 +1086,8 @@ form label {
   /* coutndown blocks */
   display: inline-block;
   flex: 0 1 calc(25%);
-  max-width: 10em;
-  height: 10em;
+  max-width: 100px;
+  height: 100px;
   background: #e3c698;
   margin: 0 4px;
   -webkit-border-radius: 50%;
