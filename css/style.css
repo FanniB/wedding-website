@@ -2190,7 +2190,7 @@ form label {
 .hotel_info {
   text-align: start;
   flex: 1;
-  width: 70%;
+  /*width: 70%;*/
   margin-bottom: 20px;
   text-align: left;
   justify-content: center;
@@ -2237,16 +2237,16 @@ form label {
   flex-direction: column;
   justify-content: center;
   margin-right: 40px;
-  margin-left: 40px;
+ /* margin-left: 40px;
   max-width: 80%;
-
+*/
 }
 
 .rsvp_text {
   margin-bottom: 20px;
   text-align: left;
   line-height: 1.9;
-
+  font-size: 1.8rem;
 }
 
 .rsvp_body .fancy {
