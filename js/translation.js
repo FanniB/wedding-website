@@ -13,7 +13,7 @@ const translations = {
                 "\t\t\t\t\t\t\tlétszámmal\n" +
                 "\t\t\t\t\t\t\ttudjunk tervezni, és jelezzétek, ha +1 fővel vagy gyerekekkel érkeztek. Kérjük, itt\n" +
                 "\t\t\t\t\t\t\tjelezzétek\n" +
-                "\t\t\t\t\t\t\tazt is, ha szükségetek van szállásra az éjszakára. Ezen kívül letölthetitek a \"save the\n" +
+                "\t\t\t\t\t\t\tazt is, ha szeretnétek szállást foglalni az éjszakára a Hotelben (kedvezményes ár vonatkozik minden rajtunk keresztül leadott foglalásra). Ezen kívül letölthetitek a \"save the\n" +
                 "\t\t\t\t\t\t\tdate\"\n" +
                 "\t\t\t\t\t\t\tnaptárfájlt is, hogy elmentsétek a dátumot a saját naptárotokba. </p>\n"
         },
@@ -79,7 +79,7 @@ const translations = {
                 "\t\t\t\t\t\t\t2025. All important information, updates, and schedules will be displayed here on this\n" +
                 "\t\t\t\t\t\t\twebsite. Below, you will find a link to the RSVP form; please fill it out so we can plan the\n" +
                 "\t\t\t\t\t\t\tfinal headcount and indicate if you will be bringing a +1 or children. Please also let us\n" +
-                "\t\t\t\t\t\t\tknow here if you need accommodation for the night. Additionally, you can download the \"save\n" +
+                "\t\t\t\t\t\t\tknow here if you would like to book accommodation for the night in the Hotel (discounted price applies for all reservations submitted through us). Additionally, you can download the \"save\n" +
                 "\t\t\t\t\t\t\tthe date\" calendar file so you can save the date in your own calendar.</p>"
         },
         {
