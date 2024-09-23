@@ -12,11 +12,14 @@
 	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Fanni & Zoli esküvőjének részletei" />
-	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
+	<meta name="keywords" content="" />
 	<meta name="author" content="FundZ" />
 	<link href='https://fonts.googleapis.com/css?family=Arizonia' rel='stylesheet'>
 	<link href='https://fonts.googleapis.com/css?family=Amiko' rel='stylesheet'>
 	<link href='https://fonts.googleapis.com/css?family=Amita' rel='stylesheet'>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
 	<!--
 	//////////////////////////////////////////////////////
 
@@ -101,7 +104,7 @@
 
 						<ul>
 							<li class="active"><a href="index.html">Home</a></li>
-							<li><a href="javascript:rsvpClicked()">RSVP</a></li>
+							<li><a href="javascript:rsvpClicked()" id="rsvp-detailed">RSVP</a></li>
 
 							<li><a id="location-header-text" href="javascript:helyszinClicked()">Helyszín</a></li>
 							<li><button id="hu" class="btn-hu" onclick="setLanguage('hu')">HU</button></li>
@@ -139,7 +142,7 @@
 			<div id="rsvp_id">
 				<p></p>
 
-				<h1>RSVP</h1>
+				<h1 id="rsvp-detailed-text" class="h1_section">RSVP - Részvételi visszajelzés</h1>
 			</div>
 			<div class="rsvp_div">
 				<div class="rsvp_body">
@@ -150,10 +153,18 @@
 							létszámmal
 							tudjunk tervezni, és jelezzétek, ha +1 fővel vagy gyerekekkel érkeztek. Kérjük, itt
 							jelezzétek
-							azt is, ha szeretnétek szállást foglalni az éjszakára a Hotelben (kedvezményes ár vonatkozik minden rajtunk keresztül leadott foglalásra). Ezen kívül letölthetitek a "save the
+							azt is, ha szeretnétek szállást foglalni az éjszakára a Hotelben (kedvezményes ár vonatkozik
+							minden rajtunk keresztül leadott foglalásra). Ezen kívül letölthetitek a "save the
 							date"
 							naptárfájlt is, hogy elmentsétek a dátumot a saját naptárotokba. </p>
 					</div>
+					<button type="button" class="collapsible"><i class="material-icons">info</i></button>
+					<div id="hotel-price-text" class="hotel_price"></div>
+
+
+
+
+
 					<div class="buttons">
 						<a class="fancy" href="https://forms.office.com/r/FvrmdqXd84" target="_blank">
 							<span class=" top-key"></span>
@@ -165,7 +176,8 @@
 
 						<a class="fancy" href="files/Fanni_Zoli_eskuvo.ics" download="Fanni&Zoli esküvő">
 							<span class=" top-key"></span>
-							<span id="save-the-date-text" class="text ">Save the date</span>
+							<span id="save-the-date-text" class="text "><i class="material-icons">icon-calendar</i>Save
+								the date</span>
 							<span class="bottom-key-1"></span>
 							<span class="bottom-key-2"></span>
 						</a>
@@ -290,7 +302,7 @@
 
 		<section class="s_location">
 			<div class="location" id="helyszin_id">
-				<h1 id="location-text">Helyszín</h1>
+				<h1 id="location-text" class="h1_section">Helyszín</h1>
 			</div>
 			<div class="rsvp_div">
 

@@ -18,12 +18,23 @@ const translations = {
                 "\t\t\t\t\t\t\tnaptárfájlt is, hogy elmentsétek a dátumot a saját naptárotokba. </p>\n"
         },
         {
+            name: "rsvp-detailed-text",
+            value: "RSVP - Részvétel visszajelzése"
+        },
+        {
+            name: "hotel-price-text",
+            value: "Felnőtt vendég: 15.000 ft/fő<br>\n" +
+                "\t\t\t\t\t\t3-18 év közötti gyerekek: 10.000 Ft/fő<br>\n" +
+                "\t\t\t\t\t\t3 év alatt ingyenes<br>\n" +
+                "\t\t\t\t\t\t Az ár magában foglalja a svédasztalos reggelit az esküvő másnapján."
+        },
+        {
             name: "respond-text",
             value: "RSVP - visszajelzés"
         },
         {
             name: "save-the-date-text",
-            value: "Save the date"
+            value: "Időpont mentése"
         },
         {
             name: "location-text",
@@ -56,7 +67,7 @@ const translations = {
                 "\t\t\t\t\t\tKelet felől a 4-es, majd az 51-es főúton át, illetve a 3-as főútról.<br>\n" +
                 "\t\t\t\t\t\t<br>\n" +
                 "\t\t\t\t\t\t<u>Tömegközlekedéssel:</u><br>\n" +
-                "\t\t\t\t\t\tVárosunkat a Volánbusz és a HÉV menetrendszerinti járataival egyaránt elérheti.\n" +
+                "\t\t\t\t\t\tA város Volánbusz és a HÉV menetrendszerinti járataival egyaránt elérhető.\n" +
                 "\t\t\t\t\t\tA ráckevei HÉV-vel érkezve, a végállomásától Budapest irányába 200 m séta után jobbra fordulva.\n" +
                 "\t\t\t\t\t\tMenetrendszerinti Volán járattal (Budapest, Csepel, Vermes Miklós utcai végállomás irányából) a\n" +
                 "\t\t\t\t\t\tHÉV végállomásnál leszállva, Budapest irányába 200 m séta után jobbra fordulva. Budapest\n" +
@@ -81,6 +92,17 @@ const translations = {
                 "\t\t\t\t\t\t\tfinal headcount and indicate if you will be bringing a +1 or children. Please also let us\n" +
                 "\t\t\t\t\t\t\tknow here if you would like to book accommodation for the night in the Hotel (discounted price applies for all reservations submitted through us). Additionally, you can download the \"save\n" +
                 "\t\t\t\t\t\t\tthe date\" calendar file so you can save the date in your own calendar.</p>"
+        },
+        {
+            name: "rsvp-detailed-text",
+            value: "RSVP - Invitation response"
+        },
+        {
+            name: "hotel-price-text",
+            value: "Adults: 15.000 huf/person<br>\n" +
+                "\t\t\t\t\t\tKids between 3-18: 10.000 huf/person<br>\n" +
+                "\t\t\t\t\t\tKids under the age of 3: Free<br>\n" +
+                "\t\t\t\t\t\t The price includes the breakfast buffet on the next morning."
         },
         {
             name: "respond-text",
@@ -116,7 +138,7 @@ const translations = {
                 "\n" +
                 "\n" +
                 "<u>PUBLIC TRANSPORT:</u><br>\n" +
-                "You can also reach our town with scheduled bus (Volánbusz) and suburban railway (HÉV) lines.\n" +
+                "You can also reach the town with scheduled bus (Volánbusz) and suburban railway (HÉV) lines.\n" +
                 "If arriving with the Ráckeve HÉV line, walk 200 m from its terminus towards Budapest, then turn right. If arriving with scheduled bus service (from the direction of the Budapest, Csepel, Vermes Miklós utca terminus), alight at the HÉV terminus, walk 200 m towards Budapest, then turn right. If arriving from Budapest Népliget Bus Terminal, alight in the town centre of Ráckeve, or walk towards Budapest (ca. 1500 m), or board a local bus to the HÉV terminus.\n" +
                 "</span>"
         },
