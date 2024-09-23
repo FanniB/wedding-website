@@ -2723,7 +2723,7 @@ html {
 
 @media screen and (max-width: 480px) {
   .divider-img {
-    width: 100%;
+    width: 85%;
   }
 
 }
@@ -2796,22 +2796,38 @@ html {
   align-items: center;
   justify-content: center;
   border-radius: 10px;
+  margin: 0 10px 20px 20px;
+}
+@media screen and (max-width: 480px) {
+  .collapsible {
+    max-width: 60%;
+    margin: 0 10px 20px 70px;
+    display: flex;
+
+  }
+  .collapsible:hover {
+    background-color: #382d166f;
+    box-shadow: 0 5px 10px 0 #000;
+  }
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .collapsible:hover {
-  background-color: #ccc;
+  background-color: #382d166f;
+  box-shadow: 0 5px 10px 0 #000;
 }
 
 /* Style the collapsible content. Note: hidden by default */
 .hotel_price {
   margin-left: 20px;
-  padding: 20px 18px;
+  padding: 5px 18px 20px 18px;
   display: none;
   overflow: hidden;
   background-color: #f7f2e4;
   font-family: calibri;
-  color: #382d16;
+  color: #8a6d2d;
   font-size: 18px;
   line-height: normal;
+  text-align: left;
+
 }
