@@ -73,8 +73,18 @@ p {
 h1 {
   margin-top: 25px;
   font-family: 'Arizonia';
-  font-size: 70px;
+  font-size: 65px;
   margin-left: 50px;
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    margin-top: 20px;
+    font-family: 'Arizonia';
+    font-size: 40px;
+    margin-left: 35px;
+    margin-bottom: 30px;
+  }
 }
 
 .date {
@@ -1172,7 +1182,7 @@ form label {
     padding: 10px 0 2px 0;
     /* amounts */
   }
-  
+
 }
 
 .simply-countdown>.simply-section .simply-word {
@@ -1190,7 +1200,7 @@ form label {
     /* words */
     line-height: 1px;
   }
-  
+
 }
 
 #fh5co-testimonial,
@@ -2708,14 +2718,14 @@ html {
   .divider-img {
     width: 50%;
   }
-  
+
 }
 
 @media screen and (max-width: 480px) {
   .divider-img {
     width: 100%;
   }
-  
+
 }
 
 /*******language toggle*******/
@@ -2766,4 +2776,42 @@ html {
 .btn-en:active {
   background-color: white;
   color: black;
+}
+
+
+/****************************collapsible*************************/
+
+.collapsible {
+  background-color: #ad9d7b;
+  color: #382d16;
+  cursor: pointer;
+  /*padding: 20px 20px;*/
+  max-width: 10%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 25px;
+  margin-left: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.collapsible:hover {
+  background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.hotel_price {
+  margin-left: 20px;
+  padding: 20px 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f7f2e4;
+  font-family: calibri;
+  color: #382d16;
+  font-size: 18px;
+  line-height: normal;
 }
