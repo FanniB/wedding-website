@@ -2820,14 +2820,17 @@ html {
 /* Style the collapsible content. Note: hidden by default */
 .hotel_price {
   margin-left: 20px;
-  padding: 5px 18px 20px 18px;
+  padding: 15px 18px 15px 18px;
   display: none;
   overflow: hidden;
   background-color: #f7f2e4;
-  font-family: calibri;
+  font-family: arial;
   color: #8a6d2d;
-  font-size: 18px;
-  line-height: normal;
+  font-size: 16px;
+  line-height: 1.6em;
   text-align: left;
-
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ad9d7b;
+  border-radius: 7px;
 }
