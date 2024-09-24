@@ -26,7 +26,8 @@ const translations = {
             value: "Felnőtt vendég: 15.000 ft/fő<br>\n" +
                 "\t\t\t\t\t\t3-18 év közötti gyerekek: 10.000 Ft/fő<br>\n" +
                 "\t\t\t\t\t\t3 év alatt ingyenes<br>\n" +
-                "\t\t\t\t\t\t Az ár magában foglalja a svédasztalos reggelit az esküvő másnapján."
+                "\t\t\t\t\t\t Az ár magában foglalja a svédasztalos reggelit az esküvő másnapján.<br>\n" +
+                "\t\t\t\t\t\t Körülbelül 1 hónappal az esküvő előtt fogjuk kiküldeni a számlaszámot az utaláshoz."
         },
         {
             name: "respond-text",
@@ -102,7 +103,8 @@ const translations = {
             value: "Adults: 15.000 huf/person<br>\n" +
                 "\t\t\t\t\t\tKids between 3-18: 10.000 huf/person<br>\n" +
                 "\t\t\t\t\t\tKids under the age of 3: Free<br>\n" +
-                "\t\t\t\t\t\t The price includes the breakfast buffet on the next morning."
+                "\t\t\t\t\t\t The price includes the breakfast buffet on the next morning.<br>\n" +
+                "\t\t\t\t\t\t We will send you the bank account number for the transfer about 1 month before the wedding."
         },
         {
             name: "respond-text",
