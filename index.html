@@ -3,24 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Secure Website</title>
+  <title>Belépés - Fanni & Zoli esküvő</title>
   <style>
-    body {
+     body {
       font-family: Arial, sans-serif;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
       margin: 0;
-      background-color: #f4f4f9;
+      background: url("images/login_bg_3.jpg") no-repeat center center fixed;
+      background-size: cover /* Ensures the image covers the entire page */
     }
+    
     .password-container {
       text-align: center;
-      background: white;
+      background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
       padding: 20px;
       border-radius: 8px;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
+
     input {
       padding: 10px;
       margin-top: 10px;
@@ -50,27 +53,13 @@
 <body>
   <div class="password-container">
     <h2>Add meg a jelszót a belépéshez</h2>
-    <h4>Enter Password to Access</h4>
     <input type="password" id="password" placeholder="Jelszó/Password">
     <button onclick="validatePassword()">Ok</button>
     <div id="error-message" class="error"></div>
   </div>
 
-  <script>
-    const correctPassword = "ready2wed"; // Replace this with your desired password
+  <!-- Link to external JavaScript file -->
+  <script src="auth.js"></script> 
 
-    function validatePassword() {
-      const input = document.getElementById("password").value;
-      const errorMessage = document.getElementById("error-message");
-
-      if (input === correctPassword) {
-        errorMessage.textContent = "";
-        // Redirect to the main page (or load content dynamically)
-        window.location.href = "main.html"; // Replace with the URL of your main page
-      } else {
-        errorMessage.textContent = "Hibás jelszó / Incorrect password";
-      }
-    }
-  </script>
 </body>
 </html>
