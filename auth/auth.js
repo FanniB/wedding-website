@@ -2,25 +2,28 @@
 function checkSession() {
   const authTimestamp = localStorage.getItem("authTimestamp");
 
-  if (authTimestamp) {
-      const timeElapsed = Date.now() - parseInt(authTimestamp, 10);
-      const oneDay = 24 * 60 * 60 * 1000; // 24 hours in milliseconds
+  if (!authTimestamp) {
+      redirectToLogin();
+      return;
+  }
 
-      if (timeElapsed < oneDay) {
-          return; // User is authenticated, do nothing
-      } else {
-          // Session expired, remove stored timestamp and redirect to login
-          localStorage.removeItem("authTimestamp");
-          window.location.href = "login.html";
-      }
-  } else {
-      // No session, redirect to login only if the user is on a protected page
-      const protectedPages = ["main.html", "faq.html", "gallery.html"];
-      const currentPage = window.location.pathname.split("/").pop(); // Get current file name
+  const timeElapsed = Date.now() - parseInt(authTimestamp, 10);
+  const oneDay = 24 * 60 * 60 * 1000; // 24 hours in milliseconds
 
-      if (protectedPages.includes(currentPage)) {
-          window.location.href = "login.html";
-      }
+  if (timeElapsed > oneDay) {
+      // Session expired, remove stored timestamp and redirect to login
+      localStorage.removeItem("authTimestamp");
+      redirectToLogin();
+  }
+}
+
+// Redirect unauthenticated users to the login page
+function redirectToLogin() {
+  const protectedPages = ["main.html", "faq.html", "gallery.html"];
+  const currentPage = window.location.pathname.split("/").pop(); // Get current file name
+
+  if (protectedPages.includes(currentPage)) {
+      window.location.href = "../login.html"; // Adjust path if necessary
   }
 }
 
@@ -32,7 +35,7 @@ function validatePassword() {
   const input = document.getElementById("password").value;
   const errorMessage = document.getElementById("error-message");
 
-  // Base 64 
+  // Base64
   const encodedCorrectPassword = "cmVhZHkyd2Vk"; 
 
   // Encode user input to Base64 for comparison
@@ -54,7 +57,7 @@ function validatePassword() {
 function logout() {
   localStorage.removeItem("authTimestamp");
   localStorage.removeItem("lastPage"); // Clear last visited page
-  window.location.href = "login.html";
+  window.location.href = "../login.html"; // Adjust path if necessary
 }
 
 // Store last visited page before redirecting
