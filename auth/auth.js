@@ -23,7 +23,7 @@ function redirectToLogin() {
   const currentPage = window.location.pathname.split("/").pop(); // Get current file name
 
   if (protectedPages.includes(currentPage)) {
-      window.location.href = "../login.html"; // Adjust path if necessary
+      window.location.href = "../index.html"; // Adjust path if necessary
   }
 }
 
@@ -57,7 +57,7 @@ function validatePassword() {
 function logout() {
   localStorage.removeItem("authTimestamp");
   localStorage.removeItem("lastPage"); // Clear last visited page
-  window.location.href = "../login.html"; // Adjust path if necessary
+  window.location.href = "../index.html"; // Adjust path if necessary
 }
 
 // Store last visited page before redirecting
