@@ -14,7 +14,7 @@ function checkSession() {
           window.location.href = "login.html";
       }
   } else {
-      // No session, redirect to login **only if the user is on a protected page**
+      // No session, redirect to login only if the user is on a protected page
       const protectedPages = ["main.html", "dashboard.html", "settings.html"];
       const currentPage = window.location.pathname.split("/").pop(); // Get current file name
 
