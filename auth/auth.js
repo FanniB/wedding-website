@@ -32,7 +32,7 @@ function validatePassword() {
   const input = document.getElementById("password").value;
   const errorMessage = document.getElementById("error-message");
 
-  // Encoded password (Base64 version of "ready2wed")
+  // Base 64 
   const encodedCorrectPassword = "cmVhZHkyd2Vk"; 
 
   // Encode user input to Base64 for comparison
