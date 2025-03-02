@@ -15,7 +15,7 @@ function checkSession() {
       }
   } else {
       // No session, redirect to login only if the user is on a protected page
-      const protectedPages = ["main.html", "dashboard.html", "settings.html"];
+      const protectedPages = ["main.html", "faq.html", "gallery.html"];
       const currentPage = window.location.pathname.split("/").pop(); // Get current file name
 
       if (protectedPages.includes(currentPage)) {
