@@ -23,7 +23,7 @@ function redirectToLogin() {
   const currentPage = window.location.pathname.split("/").pop(); // Get current file name
 
   if (protectedPages.includes(currentPage)) {
-      window.location.href = "../index.html"; // Adjust path if necessary
+      window.location.href = "../index.html"; // Adjusted for "index.html" in the root directory
   }
 }
 
@@ -36,7 +36,7 @@ function validatePassword() {
   const errorMessage = document.getElementById("error-message");
 
   // Base64
-  const encodedCorrectPassword = "cmVhZHkyd2Vk"; 
+  const encodedCorrectPassword = "cmVhZHkyd2Vk"; // The encoded correct password
 
   // Encode user input to Base64 for comparison
   const encodedInput = btoa(input);
@@ -45,9 +45,8 @@ function validatePassword() {
       // Store session timestamp in localStorage (valid for 24 hours)
       localStorage.setItem("authTimestamp", Date.now());
 
-      // Redirect to the last visited page or main page
-      const lastPage = localStorage.getItem("lastPage") || "main.html";
-      window.location.href = lastPage;
+      // Redirect to the main page (or the last visited page, if implemented)
+      window.location.href = "pages/main.html"; // Adjusted for "main.html" inside "pages" folder
   } else {
       errorMessage.textContent = "Hibás jelszó / Incorrect password";
   }
@@ -57,7 +56,7 @@ function validatePassword() {
 function logout() {
   localStorage.removeItem("authTimestamp");
   localStorage.removeItem("lastPage"); // Clear last visited page
-  window.location.href = "../index.html"; // Adjust path if necessary
+  window.location.href = "../index.html"; // Adjusted for "index.html" in the root directory
 }
 
 // Store last visited page before redirecting

@@ -2707,7 +2707,7 @@ html {
   position: relative;
   justify-content: center;
   display: flex;
-  padding: 30px 0 10px 0;
+  padding: 50px 0 10px 0;
 }
 
 .divider-img {
@@ -2843,7 +2843,7 @@ html {
 }
 
 .responsive-img {
-  max-width: 95%; /* Adjusts size based on screen width */
+  max-width: 80%; /* Adjusts size based on screen width */
   height: auto; /* Maintains aspect ratio */
   display: block; /* Ensures proper alignment */
   align-self: center;
@@ -2857,6 +2857,7 @@ html {
 /* Change image on small screens (e.g., mobile devices) */
 @media (max-width: 768px) {
   #timeline-img {
-      content: url('images/timeline_hu_mobile.png'); /* Swap to mobile image */
+      content: url('../images/timeline_hu_mobile.png'); /* Swap to mobile image */
+      max-width: 100%;
   }
 }
