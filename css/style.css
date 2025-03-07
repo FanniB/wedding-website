@@ -2707,7 +2707,7 @@ html {
   position: relative;
   justify-content: center;
   display: flex;
-  padding: 100px 0 10px 0;
+  padding: 30px 0 10px 0;
 }
 
 .divider-img {
@@ -2833,4 +2833,30 @@ html {
   border-style: solid;
   border-color: #ad9d7b;
   border-radius: 7px;
+}
+
+.timeline_div {
+  display: flex;
+  justify-content: center;  /* Centers horizontally */
+  align-items: center;  /* Centers vertically */
+ 
+}
+
+.responsive-img {
+  max-width: 95%; /* Adjusts size based on screen width */
+  height: auto; /* Maintains aspect ratio */
+  display: block; /* Ensures proper alignment */
+  align-self: center;
+}
+
+/* .s_timeline {
+  background-color: #5c5d501f; 
+} */
+
+
+/* Change image on small screens (e.g., mobile devices) */
+@media (max-width: 768px) {
+  #timeline-img {
+      content: url('images/timeline_hu_mobile.png'); /* Swap to mobile image */
+  }
 }

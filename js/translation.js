@@ -18,8 +18,8 @@ const translations = {
                 "\t\t\t\t\t\t\tnaptárfájlt is, hogy elmentsétek a dátumot a saját naptárotokba. </p>\n"
         },
         {
-            name: "rsvp-detailed-text",
-            value: "RSVP - Részvétel visszajelzése"
+            name: "timeline_header",
+            value: "Menetrend"
         },
         {
             name: "hotel-price-text",
@@ -44,6 +44,10 @@ const translations = {
         {
             name: "location-header-text",
             value: "Helyszín"
+        },
+        {
+            name: "timeline-header-text",
+            value: "Menetrend"
         },
         {
             name: "hotel-info-text",
@@ -95,8 +99,8 @@ const translations = {
                 "\t\t\t\t\t\t\tthe date\" calendar file so you can save the date in your own calendar.</p>"
         },
         {
-            name: "rsvp-detailed-text",
-            value: "RSVP - Invitation response"
+            name: "timeline_header",
+            value: "Timeline"
         },
         {
             name: "hotel-price-text",
@@ -121,6 +125,10 @@ const translations = {
         {
             name: "location-header-text",
             value: "Location"
+        },
+        {
+            name: "timeline-header-text",
+            value: "Timeline"
         },
         {
             name: "hotel-info-text",
