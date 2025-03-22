@@ -17,7 +17,7 @@ body {
   font-size: 19px;
   line-height: 1.7;
   color: hsl(0, 37%, 7%);
-  background: #fff;
+  background: #f7f2e4;
 }
 
 #page {
@@ -134,6 +134,7 @@ figure {
 @media screen and (max-width: 768px) {
   .fh5co-nav {
     padding: 20px 0;
+
   }
 }
 
@@ -143,6 +144,7 @@ figure {
   padding: 0;
   line-height: 40px;
   font-family: "Sacramento", Arial, serif;
+  color: #532702;
 }
 
 .fh5co-nav a {
@@ -222,7 +224,7 @@ figure {
   width: 0;
   position: absolute;
   pointer-events: none;
-  border-bottom-color: #fff;
+  border-bottom-color: white;
   border-width: 8px;
   margin-left: -8px;
 }
@@ -281,7 +283,7 @@ figure {
 }
 
 .fh5co-nav ul li.active>a {
-  color: #fff !important;
+  color: #4b0f0f !important;
 }
 
 #fh5co-counter,
@@ -1915,13 +1917,13 @@ form label {
 }
 
 .fh5co-nav-toggle.fh5co-nav-white>i {
-  color: #fff;
-  background: #fff;
+  color: #4b0f0f;
+  background: #4b0f0f;
 }
 
 .fh5co-nav-toggle.fh5co-nav-white>i::before,
 .fh5co-nav-toggle.fh5co-nav-white>i::after {
-  background: #fff;
+  background: #4b0f0f;
 }
 
 .fh5co-nav-toggle i::before {
@@ -1951,6 +1953,7 @@ form label {
   -ms-transform: rotateZ(45deg);
   -o-transform: rotateZ(45deg);
   transform: rotateZ(45deg);
+  color: white;
 }
 
 .fh5co-nav-toggle.active i::after {
@@ -1960,6 +1963,7 @@ form label {
   -ms-transform: rotateZ(-45deg);
   -o-transform: rotateZ(-45deg);
   transform: rotateZ(-45deg);
+  color: white;
 }
 
 .fh5co-nav-toggle {
@@ -2756,7 +2760,7 @@ html {
 .btn-en {
 
   border: none;
-  color: white;
+  color: rgb(61, 38, 11);
   /* Default font color */
   background-color: transparent;
   /* No background color */
@@ -2770,15 +2774,67 @@ html {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+@media screen and (max-width: 768px) {
+
+  .btn-hu,
+  .btn-en {
+    color: white
+  }
+}
+
 .btn-hu:hover,
 .btn-hu:active,
 .btn-en:hover,
 .btn-en:active {
-  background-color: white;
-  color: black;
+  background-color: rgb(61, 38, 11);
+  color: white;
 }
 
 #FAQ_id {
-  margin-top: 300px; /* Adjust this value as needed */
+  margin-top: 150px;
+  /* Adjust this value as needed */
   position: relative;
+
+}
+
+.faq_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin: 10px 80px 10px 20px;
+  padding: 10px 20px 80px 20px;
+}
+
+.answer {
+  text-align: start;
+  flex: 1;
+  /*width: 70%;*/
+  margin-bottom: 20px;
+  margin-left: 4vh;
+  text-align: left;
+  justify-content: center;
+
+}
+
+.question {
+  text-align: start;
+  flex: 1;
+  /*width: 70%;*/
+  margin-bottom: 5px;
+  text-align: left;
+  justify-content: center;
+  font-weight: bold;
+  color: #4b0f0f;
+}
+
+.faq_div {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  gap: 20px;
+  margin: 10px 10px 10px 10px;
+  padding: 10px 10px 10px 10px;
 }

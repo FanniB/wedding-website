@@ -34,133 +34,163 @@
 	<link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
 
 	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="../css/animate.css">
 	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="../css/icomoon.css">
 	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="../css/bootstrap.css">
 
 	<!-- Magnific Popup -->
-	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="../css/magnific-popup.css">
 
 	<!-- Owl Carousel  -->
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="../css/owl.carousel.min.css">
+	<link rel="stylesheet" href="../css/owl.theme.default.min.css">
 
 	<!-- Theme style  -->
-	<link rel="stylesheet" href="css/style_faq.css">
+	<link rel="stylesheet" href="../css/style_faq.css">
 
 	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
+	<script src="../js/modernizr-2.6.2.min.js"></script>
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
+	<script src="../js/respond.min.js"></script>
 	<![endif]-->
 
-	<script src="js/translation.js"></script>
-	<script src="auth/auth.js"></script>
+	<script src="../js/translation.js"></script>
+	<script src="../auth/auth.js"></script>
 
 
 </head>
 
 <body>
-
 	<!-- Language Toggle -->
 
-	<div class="fh5co-loader">
+	<div class="fh5co-loader"></div>
 
-		<div id="page">
-			<nav class="fh5co-nav" role="navigation">
-				<div class="container">
-					<div class="row">
-						<div class="col-xs-2">
-							<div id="fh5co-logo">
-								<a href="index.html">Wedding<strong>.</strong></a>
-							</div>
-						</div>
+	<div id="page">
+		<nav class="fh5co-nav" role="navigation">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-2">
+						<div id="fh5co-logo"><a href="../pages/main.html">Wedding<strong>.</strong></a></div>
+					</div>
+
+					<!-- by mateszlovak-->
+					<div class="col-xs-10 text-right menu-1">
+						<script>
+							function helyszinClicked() {
+								let elem = document.getElementById("helyszin_id");
+								elem.scrollIntoView();
+							}
+
+							function timelineClicked() {
+								let elem = document.getElementById("timeline_id");
+								elem.scrollIntoView();
+							}
+						</script>
+
+						<ul>
+							<li class="active"><a href="../pages/main.html">Home</a></li>
+							<li><button id="hu" class="btn-hu" onclick="setLanguage('hu')">HU</button></li>
+
+							<li><button id="en" class="btn-en" onclick="setLanguage('en')">EN</button></li>
+
+
+						</ul>
 					</div>
 				</div>
-			</nav>
-		</div>
-	</div>
-	<div id="FAQ_id">
-		<p>
-		<h1 id="faq_titel" class="h1_section">Kérdések az esküvő kapcsán...</h1>
-		</p>
+
+			</div>
+		</nav>
 
 
-	</div>
-	<div class="faq_div">
-		<div class="faq_body">
-			<div id="faq-text" class="faq_text">Valami nem egyértelmű, és kérdésetek van az esküvő menetével, a
-				helyszínnel kapcsolatban? Reméljük, itt találtok rá választ!<br><br>
-				<p> <b> Tudunk-e parkolni a helyszínen? </b> </p>
-				<p> Igen, a Session Hotel parkolójában, valamint a Hotel és a Fürdő előtti részen tudtok parkolni -
-					amiért nem kell fizetni </p>
+		<!-- FAQ Section -->
+		<section class="faq_seciton">
+			<div id="FAQ_id">
+				<p>
+				<h1 id="faq-titel-text" class="h1_section">Kérdések az esküvő kapcsán...</h1>
+				</p>
 			</div>
 
+
+			<div class="faq_div">
+				<div id="faq-intro-text" class="hotel_info">
+					<br><br>
+				</div>
+
+				<div id="faq-q1-text" class="question"></div>
+				<div id="faq-a1-text" class="answer"></div>
+				<div id="faq-q2-text" class="question"></div>
+				<div id="faq-a2-text" class="answer"></div>
+				<div id="faq-q3-text" class="question"></div>
+				<div id="faq-a3-text" class="answer"></div>
+				<div id="faq-q4-text" class="question"></div>
+				<div id="faq-a4-text" class="answer"></div>
+				<div id="faq-q5-text" class="question"></div>
+				<div id="faq-a5-text" class="answer"></div>
+				<div id="faq-q6-text" class="question"></div>
+				<div id="faq-a6-text" class="answer"></div>
+				<div id="faq-q7-text" class="question"></div>
+				<div id="faq-a7-text" class="answer"></div>
+			</div>
+
+		</section>
+
+		<div class="gototop js-top">
+			<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
 		</div>
-	</div>
-	</div>
+
+		<!-- jQuery -->
+		<script src="../js/jquery.min.js"></script>
+		<!-- jQuery Easing -->
+		<script src="../js/jquery.easing.1.3.js"></script>
+		<!-- Bootstrap -->
+		<script src="../js/bootstrap.min.js"></script>
+		<!-- Waypoints -->
+		<script src="../js/jquery.waypoints.min.js"></script>
+		<!-- Carousel -->
+		<script src="../js/owl.carousel.min.js"></script>
+		<!-- countTo -->
+		<script src="../js/jquery.countTo.js"></script>
+
+		<!-- Stellar -->
+		<script src="../js/jquery.stellar.min.js"></script>
+		<!-- Magnific Popup -->
+		<script src="../js/jquery.magnific-popup.min.js"></script>
+		<script src="../js/magnific-popup-options.js"></script>
+
+		<!-- // <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js"></script> -->
+		<script src="../js/simplyCountdown.js"></script>
+		<!-- Main -->
+		<script src="../js/main.js"></script>
+
+		<!-- Link to the external JavaScript file -->
+		<script src="../js/slideshow.js"></script>
 
 
 
+		<script>
+			var d = new Date(2025, 4, 20, 19, 0, 0, 0);
+			//UTC-ben szamol, adj hozza +2 orat!
 
-	<div class="gototop js-top">
-		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
-	</div>
+			// default example
+			simplyCountdown('.simply-countdown-one', {
+				year: d.getFullYear(),
+				month: d.getMonth(),
+				day: d.getDate(),
+				hours: d.getHours(),
+				minutes: d.getMinutes()
+			});
 
-	<!-- jQuery -->
-	<script src="js/jquery.min.js"></script>
-	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
-	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
-	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
-	<!-- Carousel -->
-	<script src="js/owl.carousel.min.js"></script>
-	<!-- countTo -->
-	<script src="js/jquery.countTo.js"></script>
-
-	<!-- Stellar -->
-	<script src="js/jquery.stellar.min.js"></script>
-	<!-- Magnific Popup -->
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="js/magnific-popup-options.js"></script>
-
-	<!-- // <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js"></script> -->
-	<script src="js/simplyCountdown.js"></script>
-	<!-- Main -->
-	<script src="js/main.js"></script>
-
-	<!-- Link to the external JavaScript file -->
-	<script src="js/slideshow.js"></script>
-
-
-	<script src="translate.js"></script>
-
-	<script>
-		var d = new Date(2025, 4, 20, 19, 0, 0, 0);
-		//UTC-ben szamol, adj hozza +2 orat!
-
-		// default example
-		simplyCountdown('.simply-countdown-one', {
-			year: d.getFullYear(),
-			month: d.getMonth(),
-			day: d.getDate(),
-			hours: d.getHours(),
-			minutes: d.getMinutes()
-		});
-
-		//jQuery example
-		$('#simply-countdown-losange').simplyCountdown({
-			year: d.getFullYear(),
-			month: d.getMonth(),
-			day: d.getDate(),
-			enableUtc: false
-		});
-	</script>
+			//jQuery example
+			$('#simply-countdown-losange').simplyCountdown({
+				year: d.getFullYear(),
+				month: d.getMonth(),
+				day: d.getDate(),
+				enableUtc: false
+			});
+		</script>
 
 </body>
 

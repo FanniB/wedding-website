@@ -82,6 +82,102 @@ const translations = {
                 "\t\t\t\t\t</span>\n" +
                 "\n"
         },
+        {
+            name: "faq-titel-text",
+            value: "Kérdések & Válaszok<br><br>"
+        },
+        {
+            name: "faq-intro-text",
+            value: "Valami nem egyértelmű, és kérdésetek van az esküvő menetével, a helyszínnel, vagy a programmal kapcsolatban? Reméljük, itt találtok rá választ!"
+        },
+        {
+            name: "faq-section1-text",
+            value: "<h2><b>Hotellel kapcsolatos további információk</b></h2><br>"
+        },
+        {
+            name: "faq-q1-text",
+            value: "Lehetséges előrehozni a check-in időpontját?"
+        },
+        {
+            name: "faq-a1-text",
+            value:
+                "\t\t\t\t\t<span class=\"checkin-info\">\n" +
+                "\t\t\t\t\t\tMivel az előző napon is esküvő lesz a helyszínen, a korábbi check-in valószínűleg nem lehetséges.\n" +
+                "\t\t\t\t\t\tÁprilis 19-én lehet legkorábban érdeklődni az aktuális helyzetről, hogy az előző vendégek\n" +
+                "\t\t\t\t\t\ttávozása után lehetséges-e korábban bejelentkezni.<br>\n" +
+                "\t\t\t\t\t\tFontos megjegyezni, hogy a check-in kezdete és a vendégvárás közötti időszakban a kertbe nem lehet lemenni.\n" +
+                "\t\t\t\t\t</span>\n" +
+                "\n"
+        },
+        {
+            name: "faq-q2-text",
+            value: "A check-out időpontját lehet-e későbbre tenni?"
+        },
+        {
+            name: "faq-a2-text",
+            value: "Sajnos a check-out időpontját (10:00) nem lehet későbbre tenni, és a kései kijelentkezés feláras. Mivel a reggeli 11:00-ig tart, kérjük figyeljetek erre a határidőre."
+        },
+        {
+            name: "faq-q3-text",
+            value: "Van-e lehetőség csomagmegőrzésre?"
+        },
+        {
+            name: "faq-a3-text",
+            value: "Igen, a hotel recepcióján lehetőség van a csomagmegőrzésre."
+        },
+        {
+            name: "faq-q4-text",
+            value: "Lehetséges a szauna használata és a termálfürdő látogatása az esküvő másnapján?"
+        },
+        {
+            name: "faq-a4-text",
+            value:
+                "\n" +
+                "\n" +
+                "\n" +
+                "\t\t\t\t\t<span class=\"wellness-info\">\n" +
+                "\t\t\t\t\t\tAz esküvőt követő napon a hotel kerthelyiségében található szauna 12:00 óráig használható.<br>\n" +
+                "\t\t\t\t\t\tA hotel közvetlenül a helyi termálfürdő mellett található, azonban a fürdő szolgáltatásai nem részei a szállásnak, így a hotel vendégei számára a fürdőhasználat nem ingyenes.\n" +
+                "\t\t\t\t\t\tAmennyiben szeretnétek igénybe venni, külön belépőjegyet kell vásárolni.<br>\n" +
+                "\t\t\t\t\t\tA termálfürdő húsvét hétfőn is nyitva tart, a belépőjegyek árai és további részletek megtekinthetők a fürdő hivatalos weboldalán:<br>\n" +
+                "\t\t\t\t\t\t<a href=\"https://www.aqua-land.hu/arjegyzek__Nyitva_tartas/Napi_furdobelepojegyek.html\" target=\"_blank\">AquaLand Belépőjegyek</a>\n" +
+                "\t\t\t\t\t</span>\n" +
+                "\n"
+        },
+        {
+            name: "faq-q5-text",
+            value: "Kihez lehet fordulni, ha további kérdésem van?"
+        },
+        {
+            name: "faq-a5-text",
+            value: "Az esküvő előtt nyugodtan kereshettek minket, vagy a tanúkat: Báder Vikit és Bakos Dávidot. Az esküvő napján a helyszínen a Ceremóniamesterhez, Szakál Miklóshoz intézzétek a kérdéseket.\n" +
+                "\t\t\t\t\t\tAz esküvő napján rengeteg feladat vár ránk, ezért örömmel fogadjuk a segítségeteket különböző teendőkben. Ha szívesen csatlakozol, kérjük, már az esemény előtt jelezd Fanni vagy Zoli felé! :)<br>\n" +
+                "\n"
+        },
+        {
+            name: "faq-q6-text",
+            value: "Lesz-e menyecsketánc?"
+        },
+        {
+            name: "faq-a6-text",
+            value: "Nem lesz éjfélkor menyecsketánc, ezért a gratulációk alatt kerül sor a nászajándékok átadására."
+        },
+        {
+            name: "faq-q7-text",
+            value: "Hogy jutunk a hotelhez?"
+        },
+        {
+            name: "faq-a7-text",
+            value:
+                "\t\t\t\t\t\tSzigetújfalu felől az út nem túl kellemes – tavaly még felújítás alatt állt.<br>\n" +
+                "\t\t\t\t\t\tPest felől érdemes az 51-es úton közlekedni, mivel ez kényelmesebb.<br>\n" +
+                "\t\t\t\t\t\t<br>\n" +
+                "\t\t\t\t\t\t<b>Cím:</b> Ráckeve, Termál sétány 1, 2300 Magyarország<br>\n" +
+                "\t\t\t\t\t\t<br>\n" +
+                "\t\t\t\t\t\tA hotel előtt a parkolás ingyenes.\n" +
+                "\t\t\t\t\t</span>\n" +
+                "\n"
+        }
     ],
     en: [
         {
@@ -152,8 +248,100 @@ const translations = {
                 "If arriving with the Ráckeve HÉV line, walk 200 m from its terminus towards Budapest, then turn right. If arriving with scheduled bus service (from the direction of the Budapest, Csepel, Vermes Miklós utca terminus), alight at the HÉV terminus, walk 200 m towards Budapest, then turn right. If arriving from Budapest Népliget Bus Terminal, alight in the town centre of Ráckeve, or walk towards Budapest (ca. 1500 m), or board a local bus to the HÉV terminus.\n" +
                 "</span>"
         },
+        {
+            "name": "faq-titel-text",
+            "value": "Questions & Answers<br><br>"
+        },
+        {
+            "name": "faq-intro-text",
+            "value": "Is something unclear? Do you have any questions about the wedding, the venue, or the program? We hope you'll find the answers here!"
+        },
+        {
+            "name": "faq-section1-text",
+            "value": "<h2><b>Additional Information about the Hotel</b></h2><br>"
+        },
+        {
+            "name": "faq-q1-text",
+            "value": "Is it possible to bring forward the check-in time?"
+        },
+        {
+            "name": "faq-a1-text",
+            "value": "\t\t\t\t\t<span class=\"checkin-info\">\n" +
+                "\t\t\t\t\t\tSince there will also be a wedding the day before, an earlier check-in is probably not possible.\n" +
+                "\t\t\t\t\t\tYou can inquire about the situation on April 19th to see if it's possible to check in earlier after the previous guests' departure.<br>\n" +
+                "\t\t\t\t\t\tIt’s important to note that during the time between the check-in and guest reception, access to the garden is not allowed.\n" +
+                "\t\t\t\t\t</span>\n" +
+                "\n"
+        },
+        {
+            "name": "faq-q2-text",
+            "value": "Can the check-out time be extended?"
+        },
+        {
+            "name": "faq-a2-text",
+            "value": "Unfortunately, the check-out time (10:00) cannot be extended, and late check-out comes with an additional charge. Since breakfast is served until 11:00, please be mindful of this deadline."
+        },
+        {
+            "name": "faq-q3-text",
+            "value": "Is there a possibility for luggage storage?"
+        },
+        {
+            "name": "faq-a3-text",
+            "value": "Yes, luggage storage is available at the hotel reception."
+        },
+        {
+            "name": "faq-q4-text",
+            "value": "Is it possible to use the sauna and visit the thermal bath the day after the wedding?"
+        },
+        {
+            "name": "faq-a4-text",
+            "value": "\n" +
+                "\n" +
+                "\n" +
+                "\t\t\t\t\t<span class=\"wellness-info\">\n" +
+                "\t\t\t\t\t\tThe sauna located in the hotel’s garden can be used until 12:00 pm the day after the wedding.<br>\n" +
+                "\t\t\t\t\t\tThe hotel is located next to the local thermal bath; however, the bath’s services are not included in the accommodation. Therefore, guests of the hotel need to buy separate tickets to use the bath.<br>\n" +
+                "\t\t\t\t\t\tThe thermal bath will be open on Easter Monday as well. You can find the ticket prices and further details on the bath’s official website:<br>\n" +
+                "\t\t\t\t\t\t<a href=\"https://www.aqua-land.hu/arjegyzek__Nyitva_tartas/Napi_furdobelepojegyek.html\" target=\"_blank\">AquaLand Ticket Prices</a>\n" +
+                "\t\t\t\t\t</span>\n" +
+                "\n"
+        },
+        {
+            "name": "faq-q5-text",
+            "value": "Who can I contact if I have further questions?"
+        },
+        {
+            "name": "faq-a5-text",
+            "value": "Feel free to contact us or the witnesses, Viki Báder and Dávid Bakos, before the wedding. On the wedding day, please direct your questions to the Master of Ceremonies, Miklós Szakál.\n" +
+                "\t\t\t\t\t\tOn the wedding day, there will be many tasks to handle, so we would greatly appreciate your help with various duties. If you'd like to assist, please let Fanni or Zoli know before the event! :)<br>\n" +
+                "\n"
+        },
+        {
+            "name": "faq-q6-text",
+            "value": "Will there be a traditional bride dance?"
+        },
+        {
+            "name": "faq-a6-text",
+            "value": "There will be no traditional bride dance at midnight, so the wedding gifts will be handed out during the congratulations."
+        },
+        {
+            "name": "faq-q7-text",
+            "value": "How do we get to the hotel?"
+        },
+        {
+            "name": "faq-a7-text",
+            "value": "\t\t\t\t\t\tThe road from Szigetújfalu is not very pleasant – it was under renovation last year.<br>\n" +
+                "\t\t\t\t\t\tIt’s better to take the 51 road from Pest, as it’s more convenient.<br>\n" +
+                "\t\t\t\t\t\t<br>\n" +
+                "\t\t\t\t\t\t<b>Address:</b> Ráckeve, Termál sétány 1, 2300 Hungary<br>\n" +
+                "\t\t\t\t\t\t<br>\n" +
+                "\t\t\t\t\t\tParking is free in front of the hotel.\n" +
+                "\t\t\t\t\t</span>\n" +
+                "\n"
+        }   
     ]
 };
+
 // Set default language based on the user's browser language or fallback to English
 const defaultLanguage = "hu";
 setLanguage(defaultLanguage);
