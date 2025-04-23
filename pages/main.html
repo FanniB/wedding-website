@@ -18,6 +18,11 @@
 	<link href='https://fonts.googleapis.com/css?family=Amiko' rel='stylesheet'>
 	<link href='https://fonts.googleapis.com/css?family=Amita' rel='stylesheet'>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap"
+		rel="stylesheet">
 
 
 
@@ -95,10 +100,12 @@
 
 						<ul>
 							<li class="active"><a href="../pages/main.html">Home</a></li>
-							<li><a href="javascript:timelineClicked()" id="timeline-header-text">Menetrend</a></li>
-							<li><a id="location-header-text" href="javascript:helyszinClicked()">Helyszín</a></li>
-							<li class="active"><a href="../pages/FAQ.html">FAQ</a></li>
-							<li class="active"><a href="https://ug.link/zoole07/photo/share/?pagetype=share&id=1&uuid=30856694-049b-4e1b-8c40-83a7fec34e16" target="_blank">Album</a></li>
+							<!-- <li><a href="javascript:timelineClicked()" id="timeline-header-text">Menetrend</a></li>
+							<li><a id="location-header-text" href="javascript:helyszinClicked()">Helyszín</a></li> -->
+							<!-- <li class="active"><a href="../pages/FAQ.html">FAQ</a></li> -->
+							<li class="active"><a
+									href="https://ug.link/zoole07/photo/share/?pagetype=share&id=1&uuid=30856694-049b-4e1b-8c40-83a7fec34e16"
+									target="_blank">Album</a></li>
 							<li><button id="hu" class="btn-hu" onclick="setLanguage('hu')">HU</button></li>
 
 							<li><button id="en" class="btn-en" onclick="setLanguage('en')">EN</button></li>
@@ -111,17 +118,19 @@
 			</div>
 		</nav>
 
-		<header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image:url(../images/img_bg_2.jpg);"
-			data-stellar-background-ratio="0.5">
+		<header id="fh5co-header" class="fh5co-cover" role="banner"
+			style="background-image:url(../images/img_bg_2.jpg);" data-stellar-background-ratio="0.5">
 			<div class="overlay"></div>
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 text-center">
 						<div class="display-t">
 							<div class="display-tc animate-box" data-animate-effect="fadeIn">
-								<h1>Fanni &amp; Zoli</h1>
+								<h1 id="wedding-header-text" class="fh5co-heading">Köszönjük, hogy velünk ünnepeltetek!
+								</h1>
+								<!-- <h1>Fanni &amp; Zoli</h1>
 								<h2 id="wedding-date-text" class="date">2025 Április 20, 16:00</h2>
-								<div class="simply-countdown simply-countdown-one"></div>
+								<div class="simply-countdown simply-countdown-one"></div> -->
 
 							</div>
 						</div>
@@ -130,86 +139,76 @@
 			</div>
 
 		</header>
-		<section class="s_timeline">
-			<div id="timeline_id">
-				<p></p>
+		<section class="s_summary">
+			<div id="summary_id" class="summary">
+				<p>
+					A képeket az alábbi linken tudjátok feltölteni: <a
+						href="https://ug.link/zoole07/photo/share/?pagetype=invite&id=1&uuid=6fdce2b3-500c-480b-a9f8-3b33c193804d"
+						target="_blank"><u>Képek feltöltése</u></a>
+				</p>
+				<br>
+				<p>
+					A feltöltött képeket az alábbi linken lehet megtekinteni: <a
+						href="https://ug.link/zoole07/photo/share/?pagetype=share&id=1&uuid=30856694-049b-4e1b-8c40-83a7fec34e16"
+						target="_blank"><u>Album</u></a>
+				</p>
 
-				<h1 id="timeline-header-text" class="h1_section">Menetrend</h1>
-			</div>
-			<div class="timeline_div">
-				<img src="../images/timeline_hu.png" alt="Timeline" class="responsive-img" id="timeline-img">
 
-				<script>
-					function updateTimelineImage() {
-						let image = document.getElementById("timeline-img");
-						if (window.innerWidth <= 768) {
-							image.src = "../images/timeline_hu_mobile.png";
-						} else {
-							image.src = "../images/timeline_hu.png";
-						}
-					}
-				  
-					// Run on page load
-					updateTimelineImage();
-				  
-					// Run when resizing the window
-					window.addEventListener("resize", updateTimelineImage);
-				  </script>
 			</div>
+
 		</section>
 		<div class="divider">
 			<img src="../images/divider.png" class="divider-img">
 		</div>
+		<section class="s_vendors">
+			<div id="vendors_id" class="summary">
+				<p>
+					Szolgáltatóink, akiket jó szívvel ajánlunk: <br>
+					<br>
 
-		<section class="s_location">
-			<div class="location" id="helyszin_id">
-				<h1 id="location-text" class="h1_section">Helyszín</h1>
-			</div>
-			<div class="rsvp_div">
-
-				<div id="googleMap" class="googleMap">
-					<div class="iframe-container">
-						<iframe
-							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2711.809334471674!2d18.941421876703664!3d47.1811695172583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741f7985f79623f%3A0xb78b278f1d92bffd!2sSession%20Hotel%20R%C3%A1ckeve!5e0!3m2!1sen!2sat!4v1722360850113!5m2!1sen!2sat"
-							width="400" height="300" style="border: 1px;" allowfullscreen="" loading="lazy"
-							referrerpolicy="no-referrer-when-downgrade"></iframe>
+				<div class="vendor">
+					<div class="vendor-card cm"><img src="../images/CM_final.png" alt="Vendor Image"
+							style="width:230px;height:auto;"><br>
+						<a href="https://szakalmiklos.hu/" target="_blank">Szakál Miklós</a><br><br>
+					</div>
+					<div class="vendor-card photographer"><img src="../images/Photograph_final.png" alt="Vendor Image"
+							style="width:230px;height:auto;"><br>
+						<a href="https://katasiklos.hu/" target="_blank">Siklós
+							Kata</a><br><br>
+					</div>
+					<div class="vendor-card hair">
+						<img src="../images/Hair_final.png" alt="Vendor Image" style="width:230px;height:auto;"><br>
+						<a href="https://www.instagram.com/veneszjudit" target="_blank">Venesz Judit</a><br>
+					</div>
+					<div class="vendor-card macaron">
+						<img src="../images/macaron.png" alt="Vendor Image" style="width:230px;height:auto;"><br><a
+							href="https://www.instagram.com/edesvilag/" target="_blank">Macaron és CakePop<br>- Édes
+							Világ</a><br><br>
+					</div>
+					<div class="vendor-card cake">
+						<img src="../images/CakeSmall_final.png" alt="Vendor Image"
+							style="width:230px;height:auto;"><br>
+						<a href="https://glutenmentescsoda.hu/" target="_blank">Mentes torták<br>- Egy Csepp
+							Csoda</a><br><br>
+					</div>
+					<div class="vendor-card cake2">
+						<img src="../images/CakeSmall_final.png" alt="Vendor Image"
+							style="width:230px;height:auto;"><br>
+						<a href="https://www.horvathcukraszda.hu/" target="_blank">Fő torta<br>- Horváth
+							Cukrászda</a><br><br>
+					</div>
+					<div class="vendor-card sew">
+						<img src="../images/sew.png" alt="Vendor Image"
+							style="width:230px;height:auto;"><br>
+						<a href="https://ginaszalon.hu/" target="_blank">Varrónő (Ruhaigazítás)</a><br><br>
 					</div>
 				</div>
-				<div id="hotel-info-text" class="hotel_info">
-					<h2>Session Hotel Ráckeve</h2>
+				</p>
 
-
-
-					<span class="megkozelites"> Ráckeve, Termál sétány 1, 2300 Hungary
-
-						<br><br>
-						<u>Autóval:</u><br>
-						Északról Budapest érintésével lehet Ráckevét elérni.
-						Az M0 körgyűrűről Szigetszentmiklós vagy Halászteleknél letérni, majd a Csepel-szigeti úton
-						végighaladva Szigetszentmiklós/Halásztelek – Tököl – Szigetcsép – Szigetszentmárton – Ráckeve
-						útvonalon, vagy az 51-es műútról Kiskunlacházánál Ráckeve felé a peregi elágazásnál.<br>
-						<br>
-						Ráckeve nyugat felől a Dunán keresztül több irányból közelíthető meg:
-						Adonyi, Lórévi, Százhalombattai vagy Ercsi komppal
-						majd az 51-es, vagy a Csepel-szigeten belül vezető úton keresztül
-						Délről a 6-os és a Dunaföldvári Hídon át az 51-es főúton<br>
-						<br>
-						Kelet felől a 4-es, majd az 51-es főúton át, illetve a 3-as főútról.<br>
-						<br>
-						<u>Tömegközlekedéssel:</u><br>
-						Városunkat a Volánbusz és a HÉV menetrendszerinti járataival egyaránt elérheti.
-						A ráckevei HÉV-vel érkezve, a végállomásától Budapest irányába 200 m séta után jobbra fordulva.
-						Menetrendszerinti Volán járattal (Budapest, Csepel, Vermes Miklós utcai végállomás irányából) a
-						HÉV végállomásnál leszállva, Budapest irányába 200 m séta után jobbra fordulva. Budapest
-						Népliget Autóbusz-végállomás irányából Ráckeve városközpontban leszállva, vagy gyalogosan
-						sétálva Budapest irányába (kb. 1500 méter), vagy helyi Volánbusz járatra átszállva a HÉV
-						végállomásig.
-					</span>
-
-
-				</div>
 			</div>
+
 		</section>
+
 	</div>
 
 	<div class="gototop js-top">
@@ -228,7 +227,7 @@
 	<script src="../js/owl.carousel.min.js"></script>
 	<!-- countTo -->
 	<script src="../js/jquery.countTo.js"></script>
-	
+
 
 	<!-- Stellar -->
 	<script src="../js/jquery.stellar.min.js"></script>

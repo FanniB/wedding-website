@@ -46,8 +46,8 @@ const translations = {
             value: "Helyszín"
         },
         {
-            name: "timeline-header-text",
-            value: "Menetrend"
+            name: "summary-header-text",
+            value: "Köszönjük, hogy velünk ünnepeltetek!"
         },
         {
             name: "hotel-info-text",
@@ -223,8 +223,8 @@ const translations = {
             value: "Location"
         },
         {
-            name: "timeline-header-text",
-            value: "Timeline"
+            name: "summary-header-text",
+            value: "Thank you for celebrating with us!"
         },
         {
             name: "hotel-info-text",
